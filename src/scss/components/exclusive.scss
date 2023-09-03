@@ -67,8 +67,6 @@
         -o-transition: all ease 1s;
         transition: all ease 1s;
         img {
-            width: 343px;
-            height: 343px;
             -ms-transform: rotate(-2deg);
            -webkit-transform: rotate(-2deg);
                    transform: rotate(-2deg);
@@ -192,7 +190,7 @@
 @media screen and (max-width: 500px) {
     .exclusive {
         &__info {
-            // max-width: 100%;
+            max-width: 100%;
             margin-bottom: 48px;
 
             & > h2 {

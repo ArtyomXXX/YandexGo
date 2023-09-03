@@ -1,7 +1,7 @@
 .main {
     padding: 124px 0 127px;
     background-image: url('../images/main/background.jpeg');
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
@@ -98,7 +98,6 @@
 // 500px____________________________________________________
 @media screen and (max-width: 500px) {
     .main {
-        background-position: center;
         padding: 32px 0 32px;
 
         &__logo {

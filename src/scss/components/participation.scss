@@ -1,0 +1,112 @@
+.participation {
+    padding-bottom: 128px;
+}
+
+.participation__inner {
+    & > h2 {
+        max-width: 600px;
+    }
+}
+
+.participation__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 61px 112px;
+}
+
+.participation__item {
+    width: 400px;
+    height: auto;
+
+    & > img {
+        width: 83px;
+        height: 83px;
+        margin-bottom: 28px;
+    }
+    &:nth-child(3), &:nth-child(4) {
+        margin-bottom: 0;
+    }
+    &:nth-child(2), &:nth-child(4) {
+        margin: 0;
+    }
+}
+
+// Медия_____________________________________________________
+// 1090px____________________________________________________
+@media screen and (max-width: 1090px) {
+    .participation {
+        &__content {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            gap: 24px;
+        }
+    
+        &__item {
+            img {
+                margin: 0 30px 0 0;
+            }
+        }
+    }
+}
+
+// 853px____________________________________________________
+@media screen and (max-width: 853px) {
+    .participation {
+        padding-bottom: 72px;
+
+        &__item {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            width: 100%;
+
+            img {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// 428px____________________________________________________
+@media screen and (max-width: 500px) {
+    .participation {
+        &__inner {
+            display: block;
+            & > h2 {
+                max-width: 300px;
+            }
+        }
+        &__content {
+            display: block;
+        }
+    
+        &__item {
+            gap: 16px;
+            & > p {
+                max-width: 220px;
+            }
+            &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+                margin-bottom: 24px;
+            }
+            &:nth-child(4) {
+                margin-bottom: 0;
+            }
+            img {
+                margin: 0 0 0 0;
+            }
+        }
+    }
+}

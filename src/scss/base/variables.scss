@@ -1,0 +1,18 @@
+// Шрифты___________________________________________
+
+@font-face {
+    font-family: "YS Text Black";
+    src: url("../fonts/text-black.woff") format("woff");
+}
+@font-face {
+    font-family: "YS Text Medium";
+    src: url("../fonts/text-medium.woff") format("woff");
+}
+@font-face {
+    font-family: "YS Text Regular";
+    src: url("../fonts/text-regular.woff") format("woff");
+}
+
+$Ys_Text_Black: YS Text Black;
+$Ys_Text_Medium: YS Text Medium;
+$Ys_Text_Regular: YS Text Regular;

@@ -1,0 +1,37 @@
+.page {
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    font-weight: 900;
+    font-size: 56px;
+    letter-spacing: -2px;
+    line-height: 56px;
+    color: #21201F;
+    margin-bottom: 48px;
+}
+
+// 500px_____________________________________________________
+@media screen and (max-width: 500px) {
+    .section {
+        padding-bottom: 72px;
+    }
+
+    .section-title {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 32px;
+    }
+
+    .section-text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}

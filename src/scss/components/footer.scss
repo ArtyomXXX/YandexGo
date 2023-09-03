@@ -1,0 +1,33 @@
+@use '../base/variables.scss' as *;
+
+.footer {
+    padding-bottom: 128px;
+
+    &__text {
+        font-family: $Ys_Text_Regular;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        color: #c5c5c5;
+        max-width: 906px;
+        margin: 0 auto;
+    
+        & > a {
+            color: #c5c5c5;
+            text-decoration: underline;
+        }
+    }
+}
+
+// Медия_____________________________________________________
+// 500px_____________________________________________________
+@media screen and (max-width: 500px) {
+    .footer {
+        padding-bottom: 72px;
+
+        &__text {
+            font-size: 10px;
+            max-width: 100%;
+        }
+    }
+}

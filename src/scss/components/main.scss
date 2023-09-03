@@ -1,0 +1,143 @@
+.main {
+    padding: 124px 0 127px;
+    background-image: url('../images/main/background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+
+    &__logo {
+        margin-bottom: 72px;
+    }
+    &__bg-img {
+        position: relative;
+        top: 120px;
+        z-index: -1;
+    
+        &__1 {
+            position: absolute;
+            top: -800px;
+            right: 70px;
+        }
+        &__2 {
+            position: absolute;
+            top: -450px;
+            right: 460px;
+        }
+        &__3 {
+            position: absolute;
+            top: -860px;
+            right: 0;
+            z-index: -1;
+        }
+    }
+    &__bg-img__mobile {
+        display: none;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 72px;
+        letter-spacing: -2px;
+        line-height: 72px;
+        color: #21201F;
+        max-width: 420px;
+        margin-bottom: 48px;
+    }
+    &__text {
+        max-width: 420px;
+        margin-bottom: 44px;
+        line-height: 1.5;
+    }
+}
+
+.sale {
+    padding: 8px 17px 8px 0;
+    background: rgba($color: #B6B9FF, $alpha: 0.3);
+    border-radius: 500px;
+
+    &__price {
+        padding: 8px 12px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#E0B8FF), color-stop(#D1B8FF), to(#B6B9FF));
+        background: -o-linear-gradient(#E0B8FF, #D1B8FF, #B6B9FF);
+        background: linear-gradient(#E0B8FF, #D1B8FF, #B6B9FF);
+        border-radius: 500px;
+    }
+    
+    &__before {
+        vertical-align: text-top;
+        font-size: 16px;
+        text-decoration: line-through;
+        color: #808080;
+    }
+}
+
+
+// Медия_____________________________________________________
+// 1090px____________________________________________________
+@media screen and (max-width: 1090px) {
+    .main__inner {
+        height: 600px;
+    }
+
+    .main__bg-img {
+        width: 619px;
+        height: 665px;
+        top: 220px;
+        left: 330px;
+        &__2 {
+            top: -560px;
+            right: 340px;
+        }
+        &__3 {
+            top: -670px;
+            right: 0;
+        }
+    }
+}
+
+// 500px____________________________________________________
+@media screen and (max-width: 500px) {
+    .main {
+        background-position: center;
+        padding: 32px 0 32px;
+
+        &__logo {
+            width: 112px;
+            height: 32px;
+            margin-bottom: 32px;
+        }
+        &__title {
+            font-size: 36px;
+            line-height: 36px;
+            max-width: 300px;
+            margin-bottom: 35px;
+        }
+        &__text {
+            font-size: 18px;
+            max-width: 325px;
+            margin-bottom: 0;
+        }
+        &__button {
+            display: none;
+        }
+        &__bg-img {
+            display: none;
+        }
+        &__bg-img__mobile {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .sale {
+        padding: 5px 7px 5px 0;
+    
+        &__price {
+            padding: 5px 7px;
+        }
+        
+        &__before {
+            font-size: 13px;
+        }
+    }
+}

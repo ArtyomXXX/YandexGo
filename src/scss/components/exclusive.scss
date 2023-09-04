@@ -41,9 +41,9 @@
 
 // Слайдер______________________________________
 .slider-wrapper {
+    display: none;
     position: relative;
     z-index: 1;
-    display: none;
 }
 
 .slider-img {
@@ -57,6 +57,7 @@
 
 .slider {
     overflow: hidden;
+    height: 550px;
 
     &__line {
         display: -webkit-box;
@@ -67,6 +68,8 @@
         -o-transition: all ease 1s;
         transition: all ease 1s;
         img {
+            width: 344px;
+            height: 344px;
             -ms-transform: rotate(-2deg);
            -webkit-transform: rotate(-2deg);
                    transform: rotate(-2deg);
